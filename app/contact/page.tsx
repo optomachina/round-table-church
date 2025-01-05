@@ -52,9 +52,10 @@ export default function ContactPage() {
           <p className="mb-2">City, State 12345</p>
           <p className="mb-4">United States</p>
           
-          <h3 className="text-xl font-semibold mb-2">Service Times</h3>
-          <p className="mb-2">Sunday: 10:00 AM</p>
-          <p>Wednesday: 7:00 PM</p>
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold mb-2">Service Times</h3>
+            <p>Sunday: 10:30 AM</p>
+          </div>
         </div>
       </div>
     </div>

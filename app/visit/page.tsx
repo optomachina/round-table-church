@@ -15,9 +15,10 @@ export default function VisitPage() {
             <li>Coffee and refreshments</li>
           </ul>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">Service Times</h2>
-          <p className="mb-2">Sunday Service: 10:00 AM</p>
-          <p>Wednesday Bible Study: 7:00 PM</p>
+          <div className="mb-8">
+            <h2 className="text-2xl font-bold mb-4">Service Times</h2>
+            <p>Sunday Service: 10:30 AM</p>
+          </div>
 
           <h2 className="text-2xl font-semibold mt-8 mb-4">Location</h2>
           <p className="mb-2">123 Church Street</p>
