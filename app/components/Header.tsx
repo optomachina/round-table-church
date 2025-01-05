@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 
 export default function Header() {
   const router = useRouter();
@@ -13,7 +14,18 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-6 flex flex-col items-center md:flex-row md:justify-between">
-        <h1 className="text-2xl font-bold text-navy-600 mb-4 md:mb-0">Round Table Church</h1>
+        <div 
+          className="cursor-pointer mb-4 md:mb-0" 
+          onClick={() => handleNavigation('/')}
+        >
+          <Image
+            src="/assets/logos/round-table-logo.svg"
+            alt="Round Table Church"
+            width={200}
+            height={100}
+            className="dark:invert"
+          />
+        </div>
         <nav>
           <ul className="flex space-x-4">
             <li><Button variant="ghost" onClick={() => handleNavigation('/')}>Home</Button></li>
